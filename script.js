@@ -1,5 +1,7 @@
 console.log('Hello World!')
 
+// Randomly generate computer's choice 
+
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * 3) + 1;
     if(choice == 1) {
@@ -11,6 +13,7 @@ function getComputerChoice() {
     }
 }
 
+// Input player's selection 
 
 function getHumanChoice() {
     let choice = prompt('Please enter any of the following: Rock, Paper, or Scissors');
@@ -23,6 +26,8 @@ function getHumanChoice() {
         return 'Scissors';
     }
 };
+
+// Plays 5 rounds of the game
 
 function playGame() {
     let humanScore = 0;
